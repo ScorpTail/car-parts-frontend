@@ -1,0 +1,64 @@
+.footer {
+	background-color: #3d4142;
+	color: #fff;
+	padding: 50px 0 20px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	&__container {
+		max-width: 800px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__contact,
+	&__nav,
+	&__social {
+		width: 30%;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__info {
+		margin: 10px 0;
+	}
+
+	&__label {
+		font-weight: bold;
+	}
+
+	&__nav-list,
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__nav-item,
+	&__item {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+	&__nav-link,
+	&__link {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	&__nav-link:hover,
+	&__link:hover {
+		text-decoration: underline;
+	}
+
+	&__rights {
+		text-align: center;
+	}
+}

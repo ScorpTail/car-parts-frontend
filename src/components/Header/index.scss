@@ -1,0 +1,81 @@
+.header {
+	&__wrapper {
+		display: flex;
+		padding: 10px 20px;
+		background-color: #3d4142;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 130px;
+	}
+
+	&__nav-bar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		margin: 0 20px;
+	}
+
+	&__nav-bar > .search {
+		width: 70%;
+	}
+
+	&__login {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		letter-spacing: 0.5px;
+		background-color: #d8622e;
+		color: #fff;
+		font-weight: 500;
+		border-radius: 8px;
+		font-size: 16px;
+		padding: 12px;
+		text-decoration: none;
+
+		&:hover {
+			background-color: #b9501a;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		margin: 0 50px;
+	}
+
+	&__login-icon {
+		width: 25px;
+		height: 25px;
+	}
+
+	&__garage {
+		cursor: pointer;
+
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	&__favorite {
+		display: flex;
+		align-items: center;
+	}
+	&__favorite-icon {
+		cursor: pointer;
+
+		width: 25px;
+		height: 25px;
+		color: #fff;
+	}
+
+	&__auth-name {
+		color: #fff;
+		text-decoration: none;
+	}
+}
