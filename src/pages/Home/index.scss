@@ -1,0 +1,161 @@
+.home-page {
+	padding: 20px;
+
+	&__title {
+		font-size: 32px;
+		margin-bottom: 20px;
+		font-weight: 500;
+		color: #3d4142;
+	}
+
+	&__divider {
+		margin: 30px auto;
+		width: 80%;
+		border: 0;
+		height: 1px;
+		background: #d8622e;
+	}
+
+	&__brands-list,
+	&__models {
+		margin-top: 30px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 0 30px;
+	}
+
+	&__brand,
+	&__item {
+		width: 20%;
+		padding: 10px;
+		text-decoration: none;
+		font-size: 16px;
+		color: #5d5b5b;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #d8622e;
+			color: #fff;
+		}
+
+		@media (max-width: 768px) {
+			width: 50%;
+		}
+	}
+
+	&__back-button {
+		margin-bottom: 20px;
+		padding: 10px 20px;
+		background-color: #d8622e;
+		color: #fff;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #ba501f;
+		}
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		margin-bottom: 20px;
+		color: #3d4142;
+	}
+
+	&__call-to-action {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+	}
+
+	&__call-to-action h2 {
+		color: #3d4142;
+		font-weight: 500;
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	&__call-to-action p {
+		font-size: 16px;
+		color: #5d5b5b;
+		margin-bottom: 20px;
+	}
+
+	&__actions {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		background-color: #d8622e;
+		color: #fff;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #ba501f;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		text-decoration: none;
+		color: inherit;
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+		&:hover {
+			background-color: #ba501f;
+		}
+
+		&:hover .home-page__item-name {
+			color: white;
+		}
+	}
+
+	&__item-image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 10px 10px 0 0;
+		margin-bottom: 0;
+	}
+
+	&__item-name {
+		font-size: 20px;
+		color: #3d4142;
+		margin: 15px 0;
+		text-align: center;
+	}
+
+	&__item-image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 10px 10px 0 0;
+		margin-bottom: 0;
+	}
+
+	&__item-name {
+		font-size: 20px;
+		color: #3d4142;
+		margin: 15px 0;
+		text-align: center;
+	}
+}
