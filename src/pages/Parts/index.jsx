@@ -75,6 +75,11 @@ function Parts() {
 		fetchParts(debouncedFilters)
 	}, [debouncedFilters])
 
+	const model = parts.find((part) => part.model_id === parseInt(modelId))
+	const modelName = model ? model.model_name : 'Невідома модель'
+
+	console.log(model)
+
 	const filteredParts = parts.filter(
 		(part) => part.model_id === parseInt(modelId)
 	)
@@ -91,7 +96,7 @@ function Parts() {
 						parts={parts}
 					/>
 					<div className="parts-page__main">
-						<TitleParts />
+						<TitleParts modelName={modelName} />
 						<div className="parts-page__cards">
 							{filteredParts.map((part) => (
 								<CardPart

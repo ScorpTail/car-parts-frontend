@@ -12,7 +12,7 @@ function Header() {
 		<div className="header">
 			<div className="header__wrapper">
 				<Link to="/" className="header__logo">
-					<img src="/src/assets/logo.png" alt="logo" />
+					<img src="/logo.png" alt="logo" />
 				</Link>
 				<div className="header__nav-bar">
 					<SearchField />
