@@ -1,0 +1,35 @@
+.profile-menu {
+	background-color: #f8f9fa;
+	padding: 10px 0;
+	border-bottom: 1px solid #dee2e6;
+
+	.container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__items {
+		color: #d8622e;
+		text-decoration: none;
+		padding: 10px 15px;
+		font-size: 16px;
+		transition: color 0.3s;
+
+		&:hover {
+			color: #b9501a;
+		}
+
+		&.active {
+			font-weight: bold;
+			color: #d8622e;
+			border-bottom: 2px solid #b9501a;
+		}
+	}
+}
