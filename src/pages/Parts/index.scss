@@ -1,0 +1,24 @@
+.parts-page {
+	padding: 0 20px 20px 20px;
+	&__wrapper {
+		display: flex;
+	}
+
+	&__main {
+		flex: 1;
+		margin-left: 20px;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+
+		@media (max-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
